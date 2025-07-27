@@ -1,13 +1,9 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  output: "export",
   images: {
-    unoptimized: true,
+    domains: ['your-image-domain.com'],
   },
-  typescript: {
-    // ignoreBuildErrors: true,
-  },
-};
+}
 
-export default nextConfig;
+export default nextConfig
