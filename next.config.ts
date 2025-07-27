@@ -1,13 +1,11 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  output: "export",
+  reactStrictMode: true,
   images: {
-    unoptimized: true,
+    domains: ['example.com'],
   },
-  typescript: {
-    // ignoreBuildErrors: true,
-  },
-};
+  // Add more config as needed
+}
 
-export default nextConfig;
+export default nextConfig
