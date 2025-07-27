@@ -1,12 +1,13 @@
-import type { NextConfig } from "next";
+// next.config.ts
+
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  output: "export",
+  reactStrictMode: true,
+  swcMinify: true,
+  // ഉദാഹരണത്തിന്, images config വേണെങ്കിൽ:
   images: {
-    unoptimized: true,
-  },
-  typescript: {
-    // ignoreBuildErrors: true,
+    domains: ['example.com'],
   },
 };
 
